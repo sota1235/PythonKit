@@ -1,4 +1,3 @@
-import sys
 import os
 
 list = os.listdir('../Scores/')
