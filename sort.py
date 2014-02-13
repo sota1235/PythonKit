@@ -7,9 +7,11 @@ list = os.listdir('.')
 extension = sys.argv[1]
 i = 1
 
-for i in list:
+for f in list:
+    if f == "sort.py":
+        continue
     if i < 10:
-        os.rename(i, '0'+str(i))
+        os.rename(f, '0'+str(i)+extension)
     else:
-        os.rename(i, str(i))
+        os.rename(f, str(i)+extension)
     i += 1
